@@ -1,0 +1,193 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #4a00e0);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+    color: #fff;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); }
+    to { transform: translateY(0); }
+}
+
+/* Contenedor principal */
+.container {
+    background: #2c3e50;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    animation: slideUp 1s ease-in-out;
+}
+
+/* Estilo del título */
+h1 {
+    margin-bottom: 20px;
+    color: #8e44ad; /* Morado oscuro */
+    font-size: 1.5em;
+}
+
+/* Grupo de formulario */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ecf0f1; /* Blanco */
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #34495e; /* Gris oscuro */
+    border-radius: 4px;
+    background-color: #34495e; /* Gris oscuro */
+    color: #ecf0f1; /* Blanco */
+    transition: box-shadow 0.3s ease;
+}
+
+input::placeholder, select {
+    color: #95a5a6; /* Gris medio */
+}
+
+input:focus, select:focus {
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); /* Azul claro */
+    outline: none;
+}
+
+/* Estilo del botón */
+button {
+    background-color: #8e44ad; /* Morado oscuro */
+    color: #fff; /* Blanco */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #6c3483; /* Morado más oscuro al pasar el mouse */
+    transform: translateY(-2px);
+}
+
+/* Resultado */
+.result-container {
+    margin-top: 20px;
+    text-align: left;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.result-container h2 {
+    margin-bottom: 10px;
+    color: #8e44ad; /* Morado oscuro */
+}
+
+.result-container p {
+    display: flex;
+    align-items: center;
+}
+
+.result-container i {
+    margin-right: 10px;
+    color: #8e44ad; /* Morado oscuro */
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+}
+
+/* Grupo de botones */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.btn-group button {
+    background-color: #8e44ad; /* Morado oscuro */
+    color: #fff; /* Blanco */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+.btn-group button:last-child {
+    margin-right: 0;
+}
+
+.btn-group button.selected {
+    background-color: #6c3483; /* Morado más oscuro para el botón seleccionado */
+}
+
+.btn-group button:hover {
+    background-color: #6c3483; /* Morado más oscuro al pasar el mouse */
+    transform: translateY(-2px);
+}
+
+/* Estilo del campo custom */
+.custom-input {
+    margin-top: 10px;
+}
+
+.custom-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #34495e; /* Gris oscuro */
+    border-radius: 4px;
+    background-color: #34495e; /* Gris oscuro */
+    color: #ecf0f1; /* Blanco */
+    transition: box-shadow 0.3s ease;
+}
+
+.custom-input input::placeholder {
+    color: #95a5a6; /* Gris medio */
+}
+
+.custom-input input:focus {
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); /* Azul claro */
+    outline: none;
+}
